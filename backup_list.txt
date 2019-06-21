@@ -1,0 +1,23 @@
+# Dotfiles to backup
+
+# Fish functions
+.config/fish/functions/dotfiles.fish
+.config/fish/functions/progress.fish
+
+# Wayland-related
+.config/sway/config
+.config/swaylock/config
+.config/waybar/config
+.config/waybar/style.css
+.config/mako/config
+
+# Terminal
+.config/kitty/kitty.conf
+.config/ranger/rc.conf
+.config/ranger/rifle.conf
+.config/ranger/commands.py
+
+# Text editors
+.vim/colors/spacemacs-theme.vim
+.vimrc
+.spacemacs
