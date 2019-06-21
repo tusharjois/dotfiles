@@ -14,7 +14,6 @@ function dotfiles
         end
         cp $HOME_DIR/$file $file_path
         git add $file
-        echo $file
     end
     git commit -am "updated dotfiles"
     and git push origin master
