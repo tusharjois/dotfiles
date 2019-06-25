@@ -69,6 +69,10 @@ output * bg /home/tushar/wallpaper.jpg fill
         natural_scroll enabled
    }
 
+
+   input "1121:19733:USB_Optical_Mouse" {
+        natural_scroll enabled
+   }
 ### Key bindings
 #
 # Basics:
