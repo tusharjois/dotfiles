@@ -65,8 +65,8 @@ output * bg /home/tushar/wallpaper.jpg fill
    default_border none
 
    input "1241:41165:USB_Keyboard" {
-        xkb_options "altwin:swap_lalt_lwin"
-   }
+       xkb_options "altwin:swap_alt_win,caps:escape"
+   } 
 
    input "2:8:AlpsPS/2_ALPS_DualPoint_TouchPad" {
         tap enabled
