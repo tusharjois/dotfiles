@@ -242,7 +242,7 @@ bar {
 gaps inner 10
 gaps outer 5
 
-font pango:Noto Sans 9
+font pango:SF Pro Display:style=Regular 10
 
 # Special Keys
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
