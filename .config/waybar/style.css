@@ -153,12 +153,12 @@ label:focus {
 }
 
 #tray {
-    background-color: #2980b9;
-}
-
-#idle_inhibitor {
     background-color: #2d3436;
 }
+
+/*#idle_inhibitor {
+    background-color: #2d3436;
+}*/
 
 #idle_inhibitor.activated {
     background-color: #ecf0f1;
