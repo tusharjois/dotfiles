@@ -3,6 +3,7 @@
 # Fish functions
 .config/fish/functions/dotfiles.fish
 .config/fish/functions/progress.fish
+.config/fish/functions/volumectl.fish
 
 # Wayland-related
 .config/sway/config
