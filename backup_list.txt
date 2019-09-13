@@ -4,6 +4,7 @@
 .config/fish/functions/dotfiles.fish
 .config/fish/functions/progress.fish
 .config/fish/functions/volumectl.fish
+.config/fish/functions/spmacs.fish
 
 # Wayland-related
 .config/sway/config
@@ -11,6 +12,7 @@
 .config/waybar/config
 .config/waybar/style.css
 .config/mako/config
+.config/fontconfig/fonts.conf
 
 # Terminal
 .config/kitty/kitty.conf
