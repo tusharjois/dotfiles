@@ -239,7 +239,7 @@ bar {
 gaps inner 10
 gaps outer 5
 
-font pango:Cantarell:style=Regular 10
+font pango:Cantarell 10
 
 # Special Keys
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
