@@ -19,7 +19,7 @@ set $term kitty
 # Note: it's recommended that you pass the final command to sway
 # set $menu dmenu_path | dmenu | xargs swaymsg exec --
 # set $menu env BEMENU_BACKEND=wayland bemenu-run -b --fn 'Noto Sans 9' | xargs swaymsg exec --
-set $menu env BEMENU_BACKEND=wayland j4-dmenu-desktop --dmenu="bemenu -b -i --fn 'Inter 10'" --term=$term | xargs swaymsg exec --
+set $menu env BEMENU_BACKEND=wayland j4-dmenu-desktop --dmenu="bemenu -b -i --fn 'Noto Sans 10'" --term=$term | xargs swaymsg exec --
 
 ### Output configuration
 #
@@ -239,7 +239,7 @@ bar {
 gaps inner 10
 gaps outer 5
 
-font pango:Inter 10
+font pango:Noto Sans 10
 
 # Special Keys
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
