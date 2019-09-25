@@ -24,6 +24,7 @@
 .vim/colors/spacemacs-theme.vim
 .vimrc
 .spacemacs
+.local/share/applications/spmacs.desktop
 
 # GTK
 .config/gtk-3.0/settings.ini
