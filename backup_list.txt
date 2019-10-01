@@ -19,6 +19,7 @@
 .config/ranger/rc.conf
 .config/ranger/rifle.conf
 .config/ranger/commands.py
+.tmux.conf
 
 # Text editors
 .vim/colors/spacemacs-theme.vim
