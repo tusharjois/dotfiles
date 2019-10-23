@@ -18,8 +18,8 @@ set $term kitty
 # Your preferred application launcher
 # Note: it's recommended that you pass the final command to sway
 # set $menu dmenu_path | dmenu | xargs swaymsg exec --
-# set $menu env BEMENU_BACKEND=wayland bemenu-run -b --fn 'Lato 9' | xargs swaymsg exec --
-set $menu env BEMENU_BACKEND=wayland j4-dmenu-desktop --dmenu="bemenu -b -i --fn 'Lato 10'" --term=$term | xargs swaymsg exec --
+# set $menu env BEMENU_BACKEND=wayland bemenu-run -b --fn 'Noto Sans 9' | xargs swaymsg exec --
+set $menu env BEMENU_BACKEND=wayland j4-dmenu-desktop --dmenu="bemenu -b -i --fn 'Noto Sans 10'" --term=$term | xargs swaymsg exec --
 
 ### Output configuration
 #
@@ -37,11 +37,11 @@ output * bg /home/tushar/wallpaper.jpg fill
 #
 # Example configuration:
 #
-# exec swayidle -w \
-#          timeout 300 'swaylock -f -c 000000' \
-#          timeout 600 'swaymsg "output * dpms off"' \
-#               resume 'swaymsg "output * dpms on"' \
-#          before-sleep 'swaylock -f -c 000000'
+exec swayidle -w \
+         timeout 300 'swaylock -f -c 000000' \
+         timeout 600 'swaymsg "output * dpms off"' \
+              resume 'swaymsg "output * dpms on"' \
+         before-sleep 'swaylock -f -c 000000'
 #
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
@@ -73,6 +73,10 @@ output * bg /home/tushar/wallpaper.jpg fill
        xkb_options "altwin:swap_alt_win,caps:escape"
    } 
 
+   input "3141:20484:SONiX_USB_DEVICE" {
+       xkb_options "altwin:swap_alt_win,caps:escape"
+   } 
+
    input "9610:4102:SINO_WEALTH_USB_KEYBOARD" {
        xkb_options "altwin:swap_alt_win,caps:escape"
    } 
@@ -94,6 +98,12 @@ output * bg /home/tushar/wallpaper.jpg fill
 
     # start your launcher
     bindsym $mod+d exec $menu
+
+    # lock the screen
+    bindsym Scroll_Lock exec swaylock
+
+    # take a screenshot
+    bindsym print exec grim -g "$(slurp)" ~/$(date +'Screenshot_%Y-%m-%d-%H%M%S.png')
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -243,7 +253,7 @@ bar {
 gaps inner 10
 gaps outer 5
 
-font pango:Lato 10
+font pango:Noto Sans 10
 
 # Special Keys
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
